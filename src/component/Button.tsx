@@ -1,15 +1,17 @@
-import { ReactElement } from 'react'
+import { Link } from 'react-router-dom'
 
 interface ButtonProps {
   text: string
   className?: string
+  path: string
 }
-export default function Button({ text, className }: ButtonProps): ReactElement {
+export default function Button({ text, className, path }: ButtonProps) {
   return (
-    <div
-      className={`${className} rounded-3xl border-2 border-yellow-500 px-4 py-2.5 text-center font-Assistant text-sm font-bold md:w-96`}
+    <Link
+      to={path}
+      className={`${className} w-full rounded-3xl px-4 py-2.5 text-center font-Assistant text-sm font-bold`}
     >
       {text}
-    </div>
+    </Link>
   )
 }

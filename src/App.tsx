@@ -1,12 +1,16 @@
-import './App.css'
+import { Route, Routes } from 'react-router-dom'
+import ErrorPage from './pages/ErrorPage'
 import Home from './pages/Home'
+import Login from './pages/Login'
 
-function App() {
+export default function App() {
   return (
     <main>
-      <Home />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='*' element={<ErrorPage />} />
+      </Routes>
     </main>
   )
 }
-
-export default App
