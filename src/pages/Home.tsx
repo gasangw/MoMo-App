@@ -12,10 +12,9 @@ export default function Home() {
             <h1 className='-pl-2 text-gray-100'>Open API</h1>
           </div>
           <p className='w-4/5 py-7 font-Assistant text-base text-gray-100'>
-            Mobile Money has availed the MoMO API, developers and programmers
-            can innovate on the platform and develop products and solutions that
-            will create a wider range of digital financial offerings for MoMo
-            customers.
+            Mobile Money has availed the MoMO API, developers and programmers can innovate on the
+            platform and develop products and solutions that will create a wider range of digital
+            financial offerings for MoMo customers.
           </p>
           <Button
             text='Apply For MoMo API'
@@ -24,11 +23,7 @@ export default function Home() {
           />
         </div>
         <div>
-          <img
-            src={personCoding}
-            alt='PersonCodingImage'
-            className='rounded-xl'
-          />
+          <img src={personCoding} alt='PersonCodingImage' className='w-full rounded-xl' />
         </div>
       </div>
     </StyleWrapper>
