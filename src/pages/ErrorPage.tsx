@@ -11,7 +11,7 @@ export default function ErrorPage() {
       <Button
         text='Go Back Home'
         path='/'
-        className='w-72 bg-yellow-500 font-Poppins text-gray-100 hover:border-2 hover:border-yellow-500 hover:bg-transparent hover:text-yellow-500'
+        className='w-64 bg-yellow-500 font-Poppins text-gray-100 hover:border-2 hover:border-yellow-500 hover:bg-transparent hover:text-yellow-500'
       />
     </div>
   )

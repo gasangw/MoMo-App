@@ -19,7 +19,7 @@ export default function Home() {
           <Button
             text='Apply For MoMo API'
             path='/login'
-            className='flex w-3/5 cursor-pointer justify-center bg-yellow-500 font-Poppins text-gray-100 hover:border-2 hover:border-yellow-500 hover:bg-transparent hover:text-yellow-500'
+            className='flex w-3/4 cursor-pointer justify-center bg-yellow-500 font-Poppins text-gray-100 hover:border-2 hover:border-yellow-500 hover:bg-transparent hover:text-yellow-500'
           />
         </div>
         <div>
