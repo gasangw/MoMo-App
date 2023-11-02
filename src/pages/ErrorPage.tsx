@@ -1,6 +1,7 @@
+import { ReactElement } from 'react'
 import Button from '../component/Button'
 
-export default function ErrorPage() {
+export default function ErrorPage(): ReactElement {
   return (
     <div className='flex h-screen flex-col items-center justify-center gap-6 text-center'>
       <div className='font-Poppins text-5xl font-bold text-gray-100'>

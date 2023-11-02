@@ -1,3 +1,4 @@
+import { ReactElement } from 'react'
 import { Link } from 'react-router-dom'
 
 interface ButtonProps {
@@ -5,7 +6,7 @@ interface ButtonProps {
   className?: string
   path: string
 }
-export default function Button({ text, className, path }: ButtonProps) {
+export default function Button({ text, className, path }: ButtonProps): ReactElement {
   return (
     <Link
       to={path}

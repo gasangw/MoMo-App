@@ -1,8 +1,9 @@
+import { ReactElement } from 'react'
 import Button from '../component/Button'
 import StyleWrapper from '../component/StyleWrapper'
 import personCoding from '/Images/personCoding.jpeg'
 
-export default function Home() {
+export default function Home(): ReactElement {
   return (
     <StyleWrapper>
       <div className='grid h-screen grid-cols-1 place-items-center gap-4 text-left md:grid-cols-2'>
