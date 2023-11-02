@@ -10,7 +10,7 @@ export default function Button({ text, className, path }: ButtonProps): ReactEle
   return (
     <Link
       to={path}
-      className={`${className} w-full rounded-3xl px-4 py-2.5 text-center font-Assistant text-sm font-bold`}
+      className={`${className} w-full rounded-3xl px-4 py-2.5 text-center font-Assistant text-sm font-bold md:w-96`}
     >
       {text}
     </Link>
