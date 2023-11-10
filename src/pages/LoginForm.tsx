@@ -15,7 +15,10 @@ export default function LoginForm() {
         Password
       </label>
       <Input icon={<KeyIcon />} text='password' type='password' className='text-xl' />
-      <Link to='/' className='text-right text-base font-semibold text-yellow-500 underline'>
+      <Link
+        to='/'
+        className='text-right text-sm font-semibold text-yellow-500 underline sm:text-base'
+      >
         forgot password
       </Link>
       <Button
