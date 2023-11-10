@@ -2,7 +2,7 @@ import { ReactElement } from 'react'
 
 export default function ProfileIcon(): ReactElement {
   return (
-    <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+    <svg width='44' height='44' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
       <path
         d='M16 15H8C5.79086 15 4 16.7909 4 19V21H20V19C20 16.7909 18.2091 15 16 15Z'
         stroke='#F9FAFB'
