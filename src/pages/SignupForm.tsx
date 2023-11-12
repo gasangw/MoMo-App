@@ -4,9 +4,23 @@ import ProfileIcon from '../assets/ProfileIcon'
 import Button from '../component/Button'
 import Input from '../component/Input'
 
-export default function LoginForm() {
+export default function SignupForm() {
   return (
-    <form className='grid space-y-4 py-3'>
+    <form className='flex flex-col space-y-4 py-3'>
+      <div className='flex justify-between gap-5'>
+        <div className='grid gap-2'>
+          <label htmlFor='firstname' className='py-2 text-lg font-semibold'>
+            First Name
+          </label>
+          <Input icon={<ProfileIcon />} text='firstname' type='text' className='text-xl' />
+        </div>
+        <div className='grid gap-2'>
+          <label htmlFor='lastname' className='py-2 text-lg font-semibold'>
+            Last Name
+          </label>
+          <Input icon={<ProfileIcon />} text='lastname' type='lastname' className='text-xl' />
+        </div>
+      </div>
       <label htmlFor='email' className='py-2 text-lg font-semibold'>
         Email
       </label>
@@ -15,26 +29,24 @@ export default function LoginForm() {
         Password
       </label>
       <Input icon={<KeyIcon />} text='password' type='password' className='text-xl' />
+      <label htmlFor='confirmpassword' className='py-2 text-lg font-semibold'>
+        Confirm Password
+      </label>
+      <Input icon={<KeyIcon />} text='confirm password' type='password' className='text-xl' />
       <Button
-        text='Log In'
+        text='Sign Up'
         className='w-full bg-yellow-600 font-Poppins text-xl hover:border-2 hover:border-yellow-600 hover:bg-transparent'
       />
       <div className='flex flex-col-reverse items-center gap-2 md:flex-row md:justify-between'>
         <p>
-          Not yet a user?{' '}
+          Have an account?{' '}
           <Link
-            to='/signup'
+            to='/login'
             className='text-right text-sm font-semibold text-yellow-500 underline sm:text-base'
           >
-            Signup
+            Login
           </Link>
         </p>
-        <Link
-          to='/'
-          className='text-right text-sm font-semibold text-yellow-500 underline sm:text-base'
-        >
-          forgot password
-        </Link>
       </div>
     </form>
   )

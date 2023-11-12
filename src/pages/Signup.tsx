@@ -1,16 +1,16 @@
 import { ReactElement } from 'react'
 import StyleWrapper from '../component/StyleWrapper'
-import LoginForm from './LoginForm'
+import SignupForm from './SignupForm'
 
-export default function Login(): ReactElement {
+export default function Signup(): ReactElement {
   return (
     <StyleWrapper className='flex items-center justify-center py-10 font-Poppins text-gray-100'>
       <div className='grid grid-cols-1 gap-3 md:grid-cols-2 lg:max-w-7xl'>
-        <div className='w-full md:w-3/4'>
+        <div className='w-4/5'>
           <h1 className='pb-4 text-left font-Poppins text-4xl font-bold text-gray-100 md:text-6xl'>
-            Welcome <span className='font-light text-yellow-500'>Back!</span>
+            Regist<span className='text-yellow-500'>er</span>
           </h1>
-          <LoginForm />
+          <SignupForm />
         </div>
         <div>
           <img
