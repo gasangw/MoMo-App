@@ -12,7 +12,7 @@ export default function Signup(): ReactElement {
           </h1>
           <SignupForm />
         </div>
-        <div>
+        <div className='hidden md:flex'>
           <img
             src='/Images/API.jpg'
             alt='PersonCodingImage'
