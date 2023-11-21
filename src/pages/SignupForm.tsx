@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import KeyIcon from '../assets/KeyIcon'
+import MessageIcon from '../assets/MessageIcon'
 import ProfileIcon from '../assets/ProfileIcon'
 import Button from '../component/Button'
 import Input from '../component/Input'
@@ -7,14 +8,14 @@ import Input from '../component/Input'
 export default function SignupForm() {
   return (
     <form className='flex flex-col space-y-4 py-3'>
-      <div className='flex justify-between gap-5'>
-        <div className='grid gap-2'>
+      <div className='flex flex-col gap-3 md:flex-row md:justify-between'>
+        <div className='grid w-full gap-2'>
           <label htmlFor='firstname' className='py-2 text-lg font-semibold'>
             First Name
           </label>
           <Input icon={<ProfileIcon />} text='firstname' type='text' className='text-xl' />
         </div>
-        <div className='grid gap-2'>
+        <div className='grid w-full gap-2'>
           <label htmlFor='lastname' className='py-2 text-lg font-semibold'>
             Last Name
           </label>
@@ -24,7 +25,7 @@ export default function SignupForm() {
       <label htmlFor='email' className='py-2 text-lg font-semibold'>
         Email
       </label>
-      <Input icon={<ProfileIcon />} text='email' type='text' className='text-xl' />
+      <Input icon={<MessageIcon />} text='email' type='text' className='text-xl' />
       <label htmlFor='password' className='py-2 text-lg font-semibold'>
         Password
       </label>

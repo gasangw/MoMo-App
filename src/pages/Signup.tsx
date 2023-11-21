@@ -4,21 +4,12 @@ import SignupForm from './SignupForm'
 
 export default function Signup(): ReactElement {
   return (
-    <StyleWrapper className='scrollbar-hide flex items-center justify-center py-10 font-Poppins text-gray-100'>
-      <div className='grid grid-cols-1 gap-3 md:grid-cols-2 lg:max-w-7xl'>
-        <div className='w-4/5'>
-          <h1 className='pb-4 text-left font-Poppins text-4xl font-bold text-gray-100 md:text-6xl'>
-            Regist<span className='text-yellow-500'>er</span>
-          </h1>
-          <SignupForm />
-        </div>
-        <div className='hidden md:flex'>
-          <img
-            src='/Images/API.jpg'
-            alt='PersonCodingImage'
-            className='h-full w-full rounded-xl object-fill'
-          />
-        </div>
+    <StyleWrapper className='flex items-center py-10 font-Poppins text-gray-100 md:h-screen lg:h-auto'>
+      <div className='mx-auto grid w-4/5 gap-3 lg:max-w-7xl'>
+        <h1 className='pb-4 text-center font-Poppins text-4xl font-bold text-gray-100 md:text-6xl'>
+          Regi<span className='text-yellow-500'>ster</span>
+        </h1>
+        <SignupForm />
       </div>
     </StyleWrapper>
   )
