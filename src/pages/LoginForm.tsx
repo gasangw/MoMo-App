@@ -11,7 +11,12 @@ export default function LoginForm() {
         <label htmlFor='email' className='text-lg font-semibold'>
           Email
         </label>
-        <Input icon={<ProfileIcon />} text='email' type='text' className='text-xl' />
+        <Input
+          icon={<ProfileIcon />}
+          text='e.g example@gmail.com'
+          type='text'
+          className='text-xl'
+        />
         <label htmlFor='password' className='text-lg font-semibold'>
           Password
         </label>
