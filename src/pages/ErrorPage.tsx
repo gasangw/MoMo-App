@@ -1,5 +1,5 @@
 import { ReactElement } from 'react'
-import Button from '../component/Button'
+import LinkButton from '../component/LinkButton'
 
 export default function ErrorPage(): ReactElement {
   return (
@@ -9,10 +9,10 @@ export default function ErrorPage(): ReactElement {
         <h2 className='animate-bounce pt-5 text-5xl'>404</h2>
       </div>
       <p className='font-Assistant text-base text-gray-100'>Something wrong happened</p>
-      <Button
+      <LinkButton
         text='Go Back Home'
         path='/'
-        className='w-64 bg-yellow-500 font-Poppins text-gray-100 hover:border-2 hover:border-yellow-500 hover:bg-transparent hover:text-yellow-500'
+        className='w-96 bg-yellow-500 font-Poppins text-gray-100 hover:border-2 hover:border-yellow-500 hover:bg-transparent hover:text-yellow-500'
       />
     </div>
   )

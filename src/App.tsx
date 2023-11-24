@@ -1,5 +1,7 @@
 import { ReactElement } from 'react'
 import { Route, Routes } from 'react-router-dom'
+import ApplicationDashboard from './pages/ApplicationDashboard'
+import BusinessDocuments from './pages/BusinessDocuments'
 import ErrorPage from './pages/ErrorPage'
 import Home from './pages/Home'
 import Login from './pages/Login'
@@ -12,6 +14,9 @@ export default function App(): ReactElement {
         <Route path='/' element={<Home />} />
         <Route path='login' element={<Login />} />
         <Route path='signup' element={<Signup />} />
+        <Route path='dashboard' element={<ApplicationDashboard />}>
+          <Route path='business' element={<BusinessDocuments />} />
+        </Route>
         <Route path='*' element={<ErrorPage />} />
       </Routes>
     </main>
