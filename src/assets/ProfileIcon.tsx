@@ -1,6 +1,9 @@
 import { ReactElement } from 'react'
 
-export default function ProfileIcon(): ReactElement {
+interface ProfileIconProps {
+  className?: string
+}
+export default function ProfileIcon({ className }: ProfileIconProps): ReactElement {
   return (
     <svg width='28' height='28' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
       <path
@@ -8,6 +11,7 @@ export default function ProfileIcon(): ReactElement {
         stroke='#004f71'
         stroke-linecap='round'
         stroke-linejoin='round'
+        className={className}
       />
       <path
         d='M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z'

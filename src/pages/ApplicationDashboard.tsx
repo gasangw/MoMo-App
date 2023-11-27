@@ -1,5 +1,6 @@
 import { Link, Outlet } from 'react-router-dom'
 import Logo from '../assets/Logo'
+import MobileNavBar from './MobileNavBar'
 
 export default function ApplicationDashboard() {
   return (
@@ -48,6 +49,7 @@ export default function ApplicationDashboard() {
       </div>
 
       <div className='w-full bg-gray-100 md:col-span-3'>
+        <MobileNavBar className='block md:hidden' />
         <Outlet />
       </div>
     </div>
