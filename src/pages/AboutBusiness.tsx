@@ -2,16 +2,17 @@ import IdIcon from '../assets/IdIcon'
 import MessageIcon from '../assets/MessageIcon'
 import PhoneIcon from '../assets/PhoneIcon'
 import ProfileIcon from '../assets/ProfileIcon'
+import Button from '../component/Button'
 import Input from '../component/Input'
 import StyleWrapper from '../component/StyleWrapper'
 import Textarea from '../component/Textarea'
 
 export default function AboutBusiness() {
   return (
-    <StyleWrapper className='h-screen pt-8'>
+    <StyleWrapper className='pt-8'>
       <h2 className='py-4 font-Poppins text-3xl font-bold text-blue-900'>About Business Owner</h2>
       <form>
-        <div className='grid grid-cols-1 gap-2 md:grid-cols-2'>
+        <div className='flex flex-col gap-2 md:grid md:grid-cols-2'>
           <div>
             <label htmlFor='firstName' className='font-Poppins text-base font-medium text-blue-900'>
               First Name
@@ -20,16 +21,16 @@ export default function AboutBusiness() {
               icon={<ProfileIcon />}
               text='firstName'
               type='text'
-              className='mb-2 border-2 border-gray-200'
+              className='order-1 mb-2 border-2 border-gray-200'
             />
-            <label htmlFor='name' className='font-Poppins text-base font-medium text-blue-900'>
-              Phone Number
+            <label htmlFor='lastName' className='font-Poppins text-base font-medium text-blue-900'>
+              Last Name
             </label>
             <Input
-              icon={<PhoneIcon />}
-              text='Phone number'
+              icon={<ProfileIcon />}
+              text='lastName'
               type='text'
-              className='border-2 border-gray-200'
+              className='order-2 mb-2 border-2 border-gray-200'
             />
             <label htmlFor='name' className='font-Poppins text-base font-medium text-blue-900'>
               National ID, Passport Number
@@ -42,14 +43,14 @@ export default function AboutBusiness() {
             />
           </div>
           <div>
-            <label htmlFor='lastName' className='font-Poppins text-base font-medium text-blue-900'>
-              Last Name
+            <label htmlFor='name' className='font-Poppins text-base font-medium text-blue-900'>
+              Phone Number
             </label>
             <Input
-              icon={<ProfileIcon />}
-              text='lastName'
+              icon={<PhoneIcon />}
+              text='Phone number'
               type='text'
-              className='mb-2 border-2 border-gray-200'
+              className='border-2 border-gray-200'
             />
             <label htmlFor='email' className='font-Poppins text-base font-medium text-blue-900'>
               Email
@@ -88,6 +89,10 @@ export default function AboutBusiness() {
             <Textarea />
           </div>
         </div>
+        <Button
+          text='Next'
+          className='mx-auto my-5 cursor-pointer bg-yellow-500 font-Assistant text-xl text-blue-900 hover:text-gray-100 md:w-96'
+        />
       </form>
     </StyleWrapper>
   )
