@@ -91,7 +91,7 @@ export default function AboutBusiness() {
         </div>
         <Button
           text='Next'
-          className='mx-auto my-5 cursor-pointer bg-yellow-500 font-Assistant text-xl text-blue-900 hover:text-gray-100 md:w-96'
+          className='mx-auto my-5 cursor-pointer bg-yellow-500 font-Assistant text-xl text-blue-900 hover:text-gray-100'
         />
       </form>
     </StyleWrapper>
