@@ -1,3 +1,4 @@
+import IdIcon from '../assets/IdIcon'
 import MessageIcon from '../assets/MessageIcon'
 import PhoneIcon from '../assets/PhoneIcon'
 import ProfileIcon from '../assets/ProfileIcon'
@@ -33,7 +34,7 @@ export default function AboutBusiness() {
               National ID, Passport Number
             </label>
             <Input
-              icon={<PhoneIcon />}
+              icon={<IdIcon />}
               text='National ID, Passport Number'
               type='text'
               className='border-2 border-gray-200'
