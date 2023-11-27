@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
 
 interface InputProps {
-  icon: ReactElement
+  icon?: ReactElement
   text: string
   type: string
   className?: string

@@ -50,7 +50,7 @@ export default function ApplicationDashboard() {
         </aside>
       </div>
 
-      <div className='h-screen w-full border-2 border-red-600 bg-white'>
+      <div className='w-full border-2 border-red-600 bg-white'>
         <Outlet />
       </div>
     </div>
