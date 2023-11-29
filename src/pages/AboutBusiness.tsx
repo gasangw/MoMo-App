@@ -2,8 +2,8 @@ import IdIcon from '../assets/IdIcon'
 import MessageIcon from '../assets/MessageIcon'
 import PhoneIcon from '../assets/PhoneIcon'
 import ProfileIcon from '../assets/ProfileIcon'
-import Button from '../component/Button'
 import Input from '../component/Input'
+import LinkButton from '../component/LinkButton'
 import StyleWrapper from '../component/StyleWrapper'
 import Textarea from '../component/Textarea'
 
@@ -89,8 +89,9 @@ export default function AboutBusiness() {
             <Textarea />
           </div>
         </div>
-        <Button
+        <LinkButton
           text='Next'
+          path='dashboard/products'
           className='mx-auto my-5 cursor-pointer bg-yellow-500 font-Assistant text-xl text-blue-900 hover:text-gray-100'
         />
       </form>

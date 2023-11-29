@@ -5,6 +5,7 @@ import ApplicationDashboard from './pages/ApplicationDashboard'
 import ErrorPage from './pages/ErrorPage'
 import Home from './pages/Home'
 import Login from './pages/Login'
+import ProductSet from './pages/ProductSet'
 import Signup from './pages/Signup'
 
 export default function App(): ReactElement {
@@ -16,6 +17,7 @@ export default function App(): ReactElement {
         <Route path='signup' element={<Signup />} />
         <Route path='dashboard' element={<ApplicationDashboard />}>
           <Route path='business' element={<AboutBusiness />} />
+          <Route path='products' element={<ProductSet />} />
         </Route>
         <Route path='*' element={<ErrorPage />} />
       </Routes>
