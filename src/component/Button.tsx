@@ -7,7 +7,7 @@ interface ButtonProps {
 export default function Button({ text, className }: ButtonProps): ReactElement {
   return (
     <div
-      className={`${className} w-full rounded-3xl px-4 py-2 text-center font-Assistant text-sm font-bold sm:py-2.5`}
+      className={`${className} w-full cursor-pointer rounded-3xl px-4 py-2 text-center font-Assistant text-sm font-bold sm:py-2.5`}
     >
       {text}
     </div>
