@@ -1,5 +1,6 @@
 import { Link, Outlet } from 'react-router-dom'
 import Logo from '../assets/Logo'
+import LogoutIcon from '../assets/LogoutIcon'
 import SidebarProfileIcon from '../assets/SidebarProfileIcon'
 import MobileNavBar from './MobileNavBar'
 
@@ -27,7 +28,6 @@ export default function ApplicationDashboard() {
                 <svg
                   className='h-5 w-5 flex-shrink-0 text-yellow-500'
                   aria-hidden='true'
-                  xmlns='http://www.w3.org/2000/svg'
                   fill='currentColor'
                   viewBox='0 0 18 18'
                 >
@@ -48,19 +48,13 @@ export default function ApplicationDashboard() {
             <li className='text-gray-100 hover:text-gray-950'>
               <Link to='.' className='group flex items-center rounded-lg p-2 hover:bg-gray-100'>
                 <SidebarProfileIcon />
-                <span className='ms-3'>Profile</span>
+                <span className='ms-3'>Documents</span>
               </Link>
             </li>
-            <li className='text-gray-100 hover:text-gray-950'>
-              <Link to='.' className='group flex items-center rounded-lg p-2 hover:bg-gray-100'>
-                <SidebarProfileIcon />
-                <span className='ms-3'>Profile</span>
-              </Link>
-            </li>
-            <li className='text-gray-100 hover:text-gray-950'>
-              <Link to='.' className='group flex items-center rounded-lg p-2 hover:bg-gray-100'>
-                <SidebarProfileIcon />
-                <span className='ms-3'>Profile</span>
+            <li className='mt-auto grid text-gray-100 hover:text-gray-950'>
+              <Link to='/' className='group flex items-center rounded-lg p-2 hover:bg-gray-100'>
+                <LogoutIcon className='text-yellow-500' />
+                <span className='ms-3'>Log Out</span>
               </Link>
             </li>
           </ul>
