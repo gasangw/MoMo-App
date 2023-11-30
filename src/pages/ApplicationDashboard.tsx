@@ -52,6 +52,15 @@ export default function ApplicationDashboard() {
               </Link>
             </li>
             <li className='mt-auto grid text-gray-100 hover:text-gray-950'>
+              <Link
+                to='kycdocuments'
+                className='group flex items-center rounded-lg p-2 hover:bg-gray-100'
+              >
+                <LogoutIcon className='text-yellow-500' />
+                <span className='ms-3'>KYC Documents</span>
+              </Link>
+            </li>
+            <li className='mt-auto grid text-gray-100 hover:text-gray-950'>
               <Link to='/' className='group flex items-center rounded-lg p-2 hover:bg-gray-100'>
                 <LogoutIcon className='text-yellow-500' />
                 <span className='ms-3'>Log Out</span>

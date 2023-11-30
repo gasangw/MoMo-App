@@ -4,6 +4,7 @@ import AboutBusiness from './pages/AboutBusiness'
 import ApplicationDashboard from './pages/ApplicationDashboard'
 import ErrorPage from './pages/ErrorPage'
 import Home from './pages/Home'
+import KYCDocuments from './pages/KYCDocuments'
 import Login from './pages/Login'
 import ProductSet from './pages/ProductSet'
 import Signup from './pages/Signup'
@@ -18,6 +19,7 @@ export default function App(): ReactElement {
         <Route path='dashboard' element={<ApplicationDashboard />}>
           <Route path='business' element={<AboutBusiness />} />
           <Route path='products' element={<ProductSet />} />
+          <Route path='kycdocuments' element={<KYCDocuments />} />
         </Route>
         <Route path='*' element={<ErrorPage />} />
       </Routes>
