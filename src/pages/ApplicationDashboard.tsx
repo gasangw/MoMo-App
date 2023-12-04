@@ -46,9 +46,12 @@ export default function ApplicationDashboard() {
               </Link>
             </li>
             <li className='text-gray-100 hover:text-gray-950'>
-              <Link to='.' className='group flex items-center rounded-lg p-2 hover:bg-gray-100'>
+              <Link
+                to='contractRequirements'
+                className='group flex items-center rounded-lg p-2 hover:bg-gray-100'
+              >
                 <SidebarProfileIcon />
-                <span className='ms-3'>Documents</span>
+                <span className='ms-3'>Contract Requirements</span>
               </Link>
             </li>
             <li className='mt-auto grid text-gray-100 hover:text-gray-950'>

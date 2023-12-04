@@ -12,7 +12,7 @@ export default function ErrorPage(): ReactElement {
       <LinkButton
         text='Go Back Home'
         path='/'
-        className='w-96 bg-yellow-500 font-Poppins text-gray-100 hover:border-2 hover:border-yellow-500 hover:bg-transparent hover:text-yellow-500'
+        className='w-80 bg-yellow-500 font-Poppins text-gray-100 hover:border-2 hover:border-yellow-500 hover:bg-transparent hover:text-yellow-500'
       />
     </div>
   )

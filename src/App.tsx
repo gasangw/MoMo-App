@@ -2,6 +2,7 @@ import { ReactElement } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import AboutBusiness from './pages/AboutBusiness'
 import ApplicationDashboard from './pages/ApplicationDashboard'
+import DisplayContractRequirements from './pages/ContractRequirements/DisplayContractRequirements'
 import ErrorPage from './pages/ErrorPage'
 import Home from './pages/Home'
 import KYCDocuments from './pages/KYCDocuments'
@@ -19,6 +20,7 @@ export default function App(): ReactElement {
         <Route path='dashboard' element={<ApplicationDashboard />}>
           <Route path='business' element={<AboutBusiness />} />
           <Route path='products' element={<ProductSet />} />
+          <Route path='contractRequirements' element={<DisplayContractRequirements />} />
           <Route path='kycdocuments' element={<KYCDocuments />} />
         </Route>
         <Route path='*' element={<ErrorPage />} />
