@@ -1,6 +1,6 @@
 import Logo from '../assets/Logo'
-import ProfileIcon from '../assets/ProfileIcon'
 import StyleWrapper from '../component/StyleWrapper'
+import UserProfile from './../assets/UserProfile'
 
 interface MobileNavBarProps {
   className?: string
@@ -16,7 +16,7 @@ export default function MobileNavBar({ className }: MobileNavBarProps) {
           <Logo className='h-12 w-12 rounded-xl' />
         </div>
         <div>
-          <ProfileIcon className='stroke-white' />
+          <UserProfile className='h-8 w-8 fill-white' />
         </div>
       </StyleWrapper>
     </div>

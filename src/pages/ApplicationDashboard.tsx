@@ -20,7 +20,7 @@ export default function ApplicationDashboard() {
           <ul className='space-y-2 font-Assistant font-semibold'>
             <li className='text-gray-100 hover:text-gray-950'>
               <Link to='.' className='group flex items-center rounded-lg p-2 hover:bg-gray-100'>
-                <UserProfile />
+                <UserProfile className=' md:h-7 md:w-7' />
                 <span className='ms-3'>Profile</span>
               </Link>
             </li>
