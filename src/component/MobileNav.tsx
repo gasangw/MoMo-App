@@ -1,7 +1,13 @@
 import { Menu, Transition } from '@headlessui/react'
-import { Fragment, ReactElement } from 'react'
+import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { Fragment } from 'react'
+import BusinessIcon from '../assets/BusinessIcon'
+import ContractIcon from '../assets/ContractIcon'
+import LogoutIcon from '../assets/LogoutIcon'
+import ProductIcon from '../assets/ProductIcon'
+import UserProfile from '../assets/UserProfile'
 
-export default function MobileNav(): ReactElement {
+export default function Example() {
   return (
     <div className='fixed top-16 w-56 text-right'>
       <Menu as='div' className='relative inline-block text-left'>
@@ -33,9 +39,9 @@ export default function MobileNav(): ReactElement {
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     {active ? (
-                      <EditActiveIcon className='mr-2 h-5 w-5' aria-hidden='true' />
+                      <UserProfile className='mr-2 h-5 w-5' aria-hidden='true' />
                     ) : (
-                      <EditInactiveIcon className='mr-2 h-5 w-5' aria-hidden='true' />
+                      <UserProfile className='mr-2 h-5 w-5' aria-hidden='true' />
                     )}
                     Edit
                   </button>
@@ -49,9 +55,13 @@ export default function MobileNav(): ReactElement {
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     {active ? (
-                      <DuplicateActiveIcon className='mr-2 h-5 w-5' aria-hidden='true' />
+                      <span className='mr-2 h-5 w-5' aria-hidden='true'>
+                        <BusinessIcon />
+                      </span>
                     ) : (
-                      <DuplicateInactiveIcon className='mr-2 h-5 w-5' aria-hidden='true' />
+                      <span className='mr-2 h-5 w-5' aria-hidden='true'>
+                        <BusinessIcon />
+                      </span>
                     )}
                     Duplicate
                   </button>
@@ -67,9 +77,13 @@ export default function MobileNav(): ReactElement {
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     {active ? (
-                      <ArchiveActiveIcon className='mr-2 h-5 w-5' aria-hidden='true' />
+                      <span className='mr-2 h-5 w-5' aria-hidden='true'>
+                        <ProductIcon />
+                      </span>
                     ) : (
-                      <ArchiveInactiveIcon className='mr-2 h-5 w-5' aria-hidden='true' />
+                      <span className='mr-2 h-5 w-5' aria-hidden='true'>
+                        <ProductIcon />
+                      </span>
                     )}
                     Archive
                   </button>
@@ -83,9 +97,13 @@ export default function MobileNav(): ReactElement {
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     {active ? (
-                      <MoveActiveIcon className='mr-2 h-5 w-5' aria-hidden='true' />
+                      <span className='mr-2 h-5 w-5' aria-hidden='true'>
+                        <ContractIcon />
+                      </span>
                     ) : (
-                      <MoveInactiveIcon className='mr-2 h-5 w-5' aria-hidden='true' />
+                      <span className='mr-2 h-5 w-5' aria-hidden='true'>
+                        <ContractIcon />
+                      </span>
                     )}
                     Move
                   </button>
@@ -101,17 +119,11 @@ export default function MobileNav(): ReactElement {
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     {active ? (
-                      <DeleteActiveIcon
-                        className='mr-2 h-5 w-5 text-violet-400'
-                        aria-hidden='true'
-                      />
+                      <LogoutIcon className='mr-2 h-5 w-5 text-violet-400' aria-hidden='true' />
                     ) : (
-                      <DeleteInactiveIcon
-                        className='mr-2 h-5 w-5 text-violet-400'
-                        aria-hidden='true'
-                      />
+                      <LogoutIcon className='mr-2 h-5 w-5 text-violet-400' aria-hidden='true' />
                     )}
-                    Delete
+                    LogOut
                   </button>
                 )}
               </Menu.Item>
